@@ -1,0 +1,250 @@
+/* Page Styling */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffecee;
+  color: #ffecee;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: #212121;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+::-webkit-scrollbar-track {
+  background: rgb(255, 21, 21);
+  /* border-radius: 1rem; */
+  margin-block: 1rem;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(211, 0, 0);
+  /* border-radius: 1rem; */
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(211, 0, 0, 0.575);
+}
+
+/* - Navbar Styling */
+nav {
+  height: 4rem;
+  width: 92%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background: rgb(210, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(210, 0, 0, 1) 0%,
+    rgba(231, 9, 9, 1) 50%,
+    rgba(152, 0, 0, 1) 100%
+  );
+}
+
+#kart-logo {
+  height: 3rem;
+  padding-left: 2rem;
+  padding-top: 0.4rem;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-link {
+  list-style: none;
+  height: 4rem;
+  width: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-link li a {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  padding: 2em;
+  margin: -2em;
+}
+
+.nav-link:hover {
+  background-color: #ffecee;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover > li a {
+  color: rgba(152, 0, 0, 1);
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: #ffffff;
+}
+/* - Article Styling */
+article {
+  width: 92%;
+  height: 60rem;
+  background: rgb(210, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(210, 0, 0, 1) 0%,
+    rgba(231, 9, 9, 1) 50%,
+    rgba(152, 0, 0, 1) 100%
+  );
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.driver-st,
+.team-st {
+  background-color: #212121;
+  width: 100%;
+  height: 60rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+table {
+  text-align: center;
+  width: 20rem;
+  border-collapse: collapse;
+  color: #212121;
+  box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.479);
+  width: 40rem;
+}
+
+th {
+  background-color: #ffecee;
+  color: #212121;
+}
+
+tr {
+  height: 2.5rem;
+}
+
+tr:nth-child(odd) {
+  background-color: #ffecee;
+}
+tr:nth-child(even) {
+  background-color: rgb(185, 185, 185);
+}
+
+.mclaren-border a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.mclaren-border a:hover {
+  background-color: rgb(255, 136, 0);
+  color: #ffecee;
+}
+
+.mercedes-border a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.mercedes-border a:hover {
+  background-color: rgb(1, 202, 202);
+  color: #ffecee;
+}
+
+.redbull-border a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.redbull-border a:hover {
+  background-color: rgb(17, 0, 167);
+  color: #ffecee;
+}
+
+.alpine-border a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.alpine-border a:hover {
+  background-color: rgb(0, 137, 201);
+  color: #ffecee;
+}
+
+.haas-border a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.haas-border a:hover {
+  background-color: rgb(128, 128, 128);
+  color: #ffecee;
+}
+
+.ferrari-border a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.ferrari-border a:hover {
+  background-color: rgb(228, 0, 0);
+  color: #ffecee;
+}
+
+.mclaren-border {
+  border-left: 0.3rem solid rgb(255, 136, 0);
+}
+.redbull-border {
+  border-left: 0.3rem solid rgb(17, 0, 167);
+}
+.mercedes-border {
+  border-left: 0.3rem solid rgb(1, 202, 202);
+}
+.alpine-border {
+  border-left: 0.3rem solid rgb(0, 137, 201);
+}
+.haas-border {
+  border-left: 0.3rem solid rgb(128, 128, 128);
+}
+.ferrari-border {
+  border-left: 0.3rem solid rgb(228, 0, 0);
+}

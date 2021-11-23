@@ -1,0 +1,203 @@
+/* Page Styling */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffecee;
+  color: #ffecee;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ffecee;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+::-webkit-scrollbar-track {
+  background: rgb(255, 21, 21);
+  /* border-radius: 1rem; */
+  margin-block: 1rem;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(211, 0, 0);
+  /* border-radius: 1rem; */
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(211, 0, 0, 0.575);
+}
+
+/* - Navbar Styling */
+nav {
+  height: 4rem;
+  width: 92%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background: rgb(210, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(210, 0, 0, 1) 0%,
+    rgba(231, 9, 9, 1) 50%,
+    rgba(152, 0, 0, 1) 100%
+  );
+}
+
+#kart-logo {
+  height: 3rem;
+  padding-left: 2rem;
+  padding-top: 0.4rem;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-link {
+  list-style: none;
+  height: 4rem;
+  width: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-link li a {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  padding: 2em;
+  margin: -2em;
+}
+
+.nav-link:hover {
+  background-color: #ffecee;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover > li a {
+  color: rgba(152, 0, 0, 1);
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: #ffffff;
+}
+/* - Article Styling */
+article {
+  width: 92%;
+  height: 51rem;
+  background: rgb(210, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(210, 0, 0, 1) 0%,
+    rgba(231, 9, 9, 1) 50%,
+    rgba(152, 0, 0, 1) 100%
+  );
+  margin-bottom: 1rem;
+}
+
+.img {
+  background-color: #212121;
+  box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.479);
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.img img {
+  margin-left: 1rem;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-left: 10rem;
+}
+
+.drivers {
+  background-color: #212121;
+  box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.479);
+  display: grid;
+  grid-template-columns: 16rem 1fr 16rem 1fr;
+}
+
+.drivers img {
+  height: 15rem;
+}
+
+table {
+  text-align: center;
+  width: 22rem;
+  border-collapse: separate;
+  color: #212121;
+  box-shadow: 10px 0px 20px rgba(29, 29, 29, 0.479);
+  margin-top: 1rem;
+}
+
+th {
+  background-color: #ffecee;
+  color: #212121;
+}
+
+tr {
+  height: 2.5rem;
+}
+
+tr:nth-child(odd) {
+  background-color: #ffecee;
+}
+tr:nth-child(even) {
+  background-color: rgb(185, 185, 185);
+}
+
+.info {
+  margin-top: 2rem;
+  background-color: #212121;
+  box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.479);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.info table {
+  width: 40rem;
+}
+
+a {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  padding: 0 13rem 0 0;
+  margin: 0 -13rem 0 0;
+}
+
+h2 {
+  transition: all 0.3s ease;
+}
+
+.driver-info h2 {
+  width: 21.9rem;
+}
+
+h2:hover {
+  background-color: rgb(17, 0, 167);
+}
