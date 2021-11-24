@@ -463,19 +463,51 @@ tr:nth-child(even) {
     margin-top: 1rem;
   }
   .left-side {
-    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    text-align: center;
   }
+
   .best-driver2,
   .best-driver3 {
     display: none;
   }
-  .best-driver1 {
+  .best-driver1,
+  .best-driver {
     width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    box-shadow: none;
   }
+
   .left-side-h2 span {
     display: none;
   }
   .left-side-h2:after {
     content: "Which driver has the best performance?";
+  }
+  main {
+    width: 100%;
+    margin: 1rem 0 1rem 0;
+    padding: 0;
+  }
+  .best-drivers {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .best-team {
+    flex-direction: column;
+    width: 100%;
+  }
+  .right-side {
+    padding: 1rem 0 1rem 0;
+    width: 100%;
   }
 }
