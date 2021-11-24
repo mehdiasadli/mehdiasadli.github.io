@@ -379,21 +379,11 @@ tr:nth-child(even) {
   nav {
     height: 30rem;
     width: 100%;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
     margin-top: 0;
     margin-left: 0;
-    margin-bottom: 1rem;
-    background: rgb(210, 0, 0);
-    background: linear-gradient(
-      90deg,
-      rgba(210, 0, 0, 1) 0%,
-      rgba(231, 9, 9, 1) 50%,
-      rgba(152, 0, 0, 1) 100%
-    );
   }
+
   #kart-logo {
     position: absolute;
     height: 2rem;
@@ -402,14 +392,11 @@ tr:nth-child(even) {
   }
 
   .nav-link {
-    height: 4rem;
     width: 10rem;
-    display: flex;
     flex-direction: column;
   }
 
   .nav-links {
-    display: flex;
     flex-direction: column;
   }
 
@@ -418,17 +405,8 @@ tr:nth-child(even) {
   }
 
   header {
-    display: flex;
     flex-direction: column;
-    align-items: flex-start;
     height: 100%;
-    background: rgb(210, 0, 0);
-    background: linear-gradient(
-      90deg,
-      rgba(210, 0, 0, 1) 0%,
-      rgba(231, 9, 9, 1) 50%,
-      rgba(152, 0, 0, 1) 100%
-    );
   }
 
   h1 {
@@ -438,17 +416,10 @@ tr:nth-child(even) {
   #header-img {
     height: auto;
     width: 100%;
-
-    box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.479);
-  }
-
-  .header-h1 {
-    margin-bottom: 1rem;
+    box-shadow: none;
   }
 
   .header-text {
-    padding-right: 1.5rem;
-    padding-top: 1.2rem;
     padding-left: 1rem;
     padding-bottom: 1rem;
     text-align: center;
@@ -484,7 +455,9 @@ tr:nth-child(even) {
     padding-bottom: 1rem;
     box-shadow: none;
   }
-
+  .best-driver1-img {
+    box-shadow: 0.5rem 0.5rem 1rem;
+  }
   .left-side-h2 span {
     display: none;
   }
@@ -505,6 +478,7 @@ tr:nth-child(even) {
   .best-team {
     flex-direction: column;
     width: 100%;
+    box-shadow: none;
   }
   .right-side {
     padding: 1rem 0 1rem 0;
