@@ -375,14 +375,16 @@ tr:nth-child(even) {
   border-left: 0.3rem solid rgb(1, 202, 202);
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
   nav {
-    height: 4rem;
-    width: 92%;
+    height: 30rem;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin-top: 1rem;
+    margin-top: 0;
+    margin-left: 0;
     margin-bottom: 1rem;
     background: rgb(210, 0, 0);
     background: linear-gradient(
@@ -392,45 +394,88 @@ tr:nth-child(even) {
       rgba(152, 0, 0, 1) 100%
     );
   }
-
   #kart-logo {
-    height: 1.5rem;
-    padding-left: 1rem;
-    padding-top: 0.2rem;
+    position: absolute;
+    height: 2rem;
+    left: 50%;
+    transform: translate(-65%);
+  }
+
+  .nav-link {
+    height: 4rem;
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
   }
 
   .nav-links {
     display: flex;
+    flex-direction: column;
   }
 
-  .nav-link {
-    list-style: none;
-    height: 4rem;
-    width: 6rem;
+  article {
+    width: 100%;
+  }
+
+  header {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    background: rgb(210, 0, 0);
+    background: linear-gradient(
+      90deg,
+      rgba(210, 0, 0, 1) 0%,
+      rgba(231, 9, 9, 1) 50%,
+      rgba(152, 0, 0, 1) 100%
+    );
   }
 
-  .nav-link li a {
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    padding: 2em;
-    margin: -2em;
+  h1 {
+    font-size: 1.5rem;
   }
 
-  .nav-link:hover {
-    background-color: #ffecee;
-    transition: all 0.3s ease;
+  #header-img {
+    height: auto;
+    width: 100%;
+
+    box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.479);
   }
 
-  .nav-link:hover > li a {
-    color: rgba(152, 0, 0, 1);
+  .header-h1 {
+    margin-bottom: 1rem;
   }
 
-  .nav-link a {
-    text-decoration: none;
-    color: #ffffff;
+  .header-text {
+    padding-right: 1.5rem;
+    padding-top: 1.2rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+
+  /* -- Main Styling */
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  .left-side {
+    padding-left: 1rem;
+  }
+  .best-driver2,
+  .best-driver3 {
+    display: none;
+  }
+  .best-driver1 {
+    width: 100%;
+  }
+  .left-side-h2 span {
+    display: none;
+  }
+  .left-side-h2:after {
+    content: "Which driver has the best performance?";
   }
 }
