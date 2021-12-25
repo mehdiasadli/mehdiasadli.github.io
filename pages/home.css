@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav {
+  background-color: #0088c9;
+  color: white;
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  flex: 1;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav form button {
+  height: 2rem;
+  width: 8rem;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+nav form button:hover {
+  background-color: #0088c9;
+  color: white;
+  border: 0.1rem solid white;
+}
+
+.profile-name {
+  height: 2rem;
+  width: 8rem;
+  /* background-color: hotpink; */
+  text-align: center;
+  padding-top: 0.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.profile-name:hover {
+  background-color: white;
+  color: #0088c9;
+}
